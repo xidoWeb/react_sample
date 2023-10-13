@@ -1,0 +1,5 @@
+const setCartList = [];
+
+function CartData(){
+    
+}

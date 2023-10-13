@@ -1,0 +1,75 @@
+fieldset {
+    position: relative;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.check_container {
+    width: 900px;
+    height: auto;
+    padding-top: 2rem;
+    margin: auto;
+    background-color: #fff;
+}
+
+.check_container h2 {
+    padding: 1rem;
+}
+
+.all_selector {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #777;
+    font-weight: bold;
+    background-color: #dfdfdf;
+}
+
+.unit_selector {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    box-sizing: border-box;
+}
+
+.unit_check {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.unit_check label {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.unit_check:hover {
+    border-bottom: 1px solid #aaaa;
+    background-color: #ddd;
+}
+
+.result_select_check {
+    width: 100%;
+    height: auto;
+    padding: 0.7rem 0;
+    text-align: center;
+    background-color: #f0f0f0;
+
+    button[type="submit"] {
+        padding: 0.4rem 0.5rem;
+        border-radius: 0.2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #fff;
+        background-color: #03a;
+    }
+}

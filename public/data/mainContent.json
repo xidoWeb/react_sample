@@ -1,0 +1,32 @@
+[
+    {
+        "id": "list_01",
+        "title": "슬라이드 배너(일부구현)",
+        "link": "/slide",
+        "content": "기본 이전 및 다음 내용확인용 슬라이드형태로/ Javascript구조로 제작 (react페이지 내 구현되도록 구성)"
+    },
+    {
+        "id": "list_02",
+        "title": "슬라이드 배너 version2 (일부구현)",
+        "link": "/slide2",
+        "content": "제목 및 내용 컨텐츠가 담긴 형태와 함께 정리된 Array 슬라이드 배너 형태로/ Javascript구조로 제작(일부 기능만 처리)/Slide 페이지 기능을 이해 후 진행할 것을 권장"
+    },
+    {
+        "id": "list_03",
+        "title": "상품 페이지(장바구니담기 추가)",
+        "link": "/product",
+        "content": "카드리스트 형태로 등록순(json작성순서), 이름순, 가격순으로 정렬/ 일부 slide 코드 내용 파악 후 진행 권장"
+    },
+    {
+        "id": "list_04",
+        "title": "체크박스",
+        "link": "/check",
+        "content": "장바구니 內 사용할 기능 중 하나인 체크박스 기능만 별도로 구성(최신 ES버전기능인 Set함수 사용)"
+    },
+    {
+        "id": "list_05",
+        "title": "장바구니(상품정렬에서 상품담기, 체크박스)",
+        "link": "/cart",
+        "content": "상품 페이지에서 장바구니담기 버튼 선택 시 장바구니 구현 Redux 대신 context 및 useReduce 기능 구현"
+    }
+]

@@ -1,0 +1,80 @@
+.main_container {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding: 1rem;
+    margin: auto;
+    background-color: #fff;
+    counter-reset: number;
+
+    ul.page_comment {
+        padding: 0;
+    }
+
+    li {
+        position: relative;
+        list-style: none;
+        padding: 0.5rem 3rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #aaa;
+
+        &:hover {
+            background-color: lighten(#07f, 45%);
+        }
+
+        &::before {
+            /* number의 값을 1씩 증가 */
+            counter-increment: number;
+            /* number 값 표시 */
+            content: "0" counter(number);
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1.5rem;
+            height: calc(100% - 0.5rem);
+            padding: 0 0.5rem;
+            padding-top: 0.5rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            background-color: #fda;
+        }
+    }
+
+    dl {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    dt {
+        color: #07f;
+        // text-decoration: underline;
+        // text-underline-offset: 0.4rem;
+        border-bottom: 1px solid #07f;
+        font-weight: bold;
+        font-size: 1.2rem;
+
+        a {
+            display: block;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    dd {
+        margin-top: 0.5rem;
+        color: #555;
+        line-height: 1.2;
+    }
+}
+
+.page_comment2 {
+    counter-reset: number;
+}

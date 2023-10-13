@@ -1,0 +1,188 @@
+// ProcudtFruit.scss
+@import "./set/var";
+@import "./set/mixin";
+
+.product_area {
+    width: 100%;
+    max-width: 1340px;
+    height: auto;
+    margin: auto;
+    padding-top: 2rem;
+    background-color: $white;
+
+    h2 {
+        width: auto;
+        height: auto;
+        padding: 1rem;
+        margin: 0;
+        box-sizing: border-box;
+        padding-bottom: 0.5rem;
+        border-bottom: $border2;
+    }
+}
+
+.list_option {
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem 1.5rem;
+    box-sizing: border-box;
+    background-color: lighten($gray3, 25%);
+    border-bottom: $border1;
+
+    &>ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+
+        li {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    & button {
+        width: auto;
+        min-width: 2rem;
+        height: 100%;
+        padding: 0 1rem;
+        font-weight: $weight3 ;
+        background-color: $white;
+
+        &.on {
+            color: $white;
+            background-color: $primary;
+        }
+    }
+}
+
+.list_content {
+    @include defaultSize;
+    padding: 2rem 0;
+    border: 0;
+
+    fieldset {
+        width: auto;
+        height: auto;
+        border: 0;
+        padding: 0;
+        margin: 0;
+
+        legent {
+            position: absolute;
+            border: 0;
+            width: 0;
+            height: 0;
+            z-index: -1;
+        }
+    }
+
+    & ul {
+        @include defaultSize;
+        display: grid;
+        grid-template-columns: repeat(4, 240px);
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem 3rem;
+
+
+
+        &>li {
+            position: relative;
+            width: 240px;
+            height: 340px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: $border1;
+            word-break: keep-all;
+        }
+    }
+}
+
+// card design
+.card_wrap {
+    width: 100%;
+    height: 100%;
+
+
+    .img_case {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 0.5rem;
+        background-color: $gray3;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 3rem;
+        padding-bottom: 0.3rem;
+        font-size: 1.1rem;
+        font-weight: $weight3;
+        border-bottom: $border2;
+    }
+
+    .check {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+    }
+
+    label {
+        color: $point1 ;
+        cursor: pointer;
+    }
+
+    .price {
+        position: relative;
+        padding-top: 0.7rem;
+
+        .origin {
+            position: absolute;
+            top: 0;
+            right: 2rem;
+            font-size: 0.7rem;
+            text-decoration: line-through;
+            color: $gray2;
+        }
+
+        .discount {
+            color: $gray2
+        }
+    }
+
+    .btns {
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        height: 2.5rem;
+        margin-top: 0.2rem;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            display: block;
+            color: $white;
+            font-weight: $weight3;
+
+            &.card_check {
+                padding: 0 0.5rem;
+                color: $black;
+                background-color: lighten($gray3, 20%);
+            }
+
+            &.card_approval {
+                padding: 0 2.2rem;
+                background-color: $primary;
+            }
+        }
+    }
+}

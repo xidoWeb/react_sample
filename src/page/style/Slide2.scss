@@ -1,0 +1,130 @@
+// Slide2.scss
+
+.slide2_product {
+    display: flex;
+    gap: 20px;
+    width: 1340px;
+    height: 500px;
+    margin: auto;
+    padding: 2rem 1rem;
+    // box-sizing: border-box;
+    background-color: #fff;
+
+    .product_narr {
+        position: relative;
+        width: 300px;
+        height: 100%;
+        box-sizing: border-box;
+        padding-bottom: 2rem;
+        // border: 1px solid #777;
+        overflow: hidden;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 10;
+        }
+
+        &::before {
+            left: 50%;
+            margin-left: -10px;
+            bottom: 10px;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #555;
+            border-top-width: 0;
+            border-left-width: 0;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            bottom: 2rem;
+            left: 0;
+            width: 100%;
+            height: 2.5rem;
+            background-image: linear-gradient(transparent, #fff 70%);
+        }
+
+        // 텍스트 영역 넘어갈 경우 스크롤바 이미지 가리기 위한 영역처리 
+        &>.over {
+            width: calc(100% + 20px);
+            box-sizing: border-box;
+            padding-right: 2rem;
+            padding-bottom: 3rem;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        p {
+            color: #777;
+        }
+    }
+}
+
+.slide2_wrap {
+    position: relative;
+    width: calc(100% - 320px);
+    height: 100%;
+    // border: 1px solid #000;
+
+
+    // slide2 button
+    .slide2_button {
+        position: absolute;
+        z-index: 20;
+        top: 1rem;
+        left: -3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        width: 2.5rem;
+        height: auto;
+
+        & button {
+            border: 0;
+            width: 100%;
+            height: 2rem;
+            background-color: #79f;
+            color: #fff;
+
+            &:hover {
+                background-color: #37a;
+            }
+        }
+    }
+
+
+    // slide2 내용
+    .slide_cont {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        & .slide_list {
+            position: relative;
+            left: 0;
+            // display: flex;
+            // flex-direction: row;
+            width: 400%;
+            height: 100%;
+            margin-left: -100%;
+            background-color: #dfdfdf;
+
+            &>li {
+                float: left;
+                width: 340px;
+                height: 100%;
+                padding: 1rem;
+                box-sizing: border-box;
+
+                .card_wrapper {
+                    width: 100%;
+                    height: 100%;
+                    box-sizing: border-box;
+                    border: 1px solid #f00;
+                }
+            }
+        }
+    }
+}
